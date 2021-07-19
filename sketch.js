@@ -48,7 +48,7 @@ function setup() {
 
   trex.scale = 0.5;
   
-  ground = createSprite(width/2,200);
+  ground = createSprite(width/2,height-20,20,20);
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
   
