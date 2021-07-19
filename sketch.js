@@ -41,14 +41,14 @@ function setup() {
   var message = "This is a message";
  console.log(message)
   
-  trex = createSprite(width/2,200);
+  trex = createSprite(50,180,20,50);
   trex.addAnimation("running", trex_running);
   trex.addAnimation("collided", trex_collided);
   
 
   trex.scale = 0.5;
   
-  ground = createSprite(width/2,height-20,20,20);
+  ground = createSprite(200,180,400,20);
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
   
