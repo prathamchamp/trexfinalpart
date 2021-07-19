@@ -48,7 +48,7 @@ function setup() {
 
   trex.scale = 0.5;
   
-  ground = createSprite(200,180,400,20);
+  ground = createSprite(width/2,200);
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
   
@@ -62,7 +62,7 @@ function setup() {
   gameOver.scale = 0.5;
   restart.scale = 0.5;
   
-  invisibleGround = createSprite(200,190,400,10);
+  invisibleGround = createSprite(windowWidth,windowHeight);
   invisibleGround.visible = false;
   
   //create Obstacle and Cloud Groups
