@@ -36,19 +36,19 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(600, 200);
+  createCanvas(windowWidth,windowHeight);
 
   var message = "This is a message";
  console.log(message)
   
-  trex = createSprite(50,160,20,50);
+  trex = createSprite(width/2,height-20,20,20);
   trex.addAnimation("running", trex_running);
   trex.addAnimation("collided", trex_collided);
   
 
   trex.scale = 0.5;
   
-  ground = createSprite(200,180,400,20);
+  ground = createSprite(width/2,200);
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
   
