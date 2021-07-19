@@ -41,7 +41,7 @@ function setup() {
   var message = "This is a message";
  console.log(message)
   
-  trex = createSprite(width/2,height-20,20,20);
+  trex = createSprite(width/2,200);
   trex.addAnimation("running", trex_running);
   trex.addAnimation("collided", trex_collided);
   
